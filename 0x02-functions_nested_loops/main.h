@@ -1,5 +1,5 @@
-#ifndef main.h
-#define main.h
+#ifndef _MAIN_H
+#define _MAIN_H
 /**
  * _putchar - writes the character c to std
  * @c: parameter to compare
