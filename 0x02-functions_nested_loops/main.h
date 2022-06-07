@@ -5,5 +5,6 @@
  * @c: parameter to compare
  * Return: 1 or 0
  */
-char _putchar(char c);
+char _putchar(char c)
+void print_alphabet(void);
 #endif
