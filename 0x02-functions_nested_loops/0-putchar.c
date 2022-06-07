@@ -8,7 +8,7 @@
  *
  * On error, -1 is returned, and errno is set appropriately.
  */
-int _putchar(char c)
+#include <main.h>
 {
 	return (write(1, &c, 1));
 }
