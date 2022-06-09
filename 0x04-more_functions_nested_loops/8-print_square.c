@@ -4,7 +4,7 @@
  *
  * @size: integer to set square size
  */
-void print_sqaure(int size)
+void print_square(int size)
 {
 	int i;
 	int j;
