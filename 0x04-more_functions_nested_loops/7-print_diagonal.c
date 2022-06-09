@@ -3,6 +3,7 @@
  * print-diagonal - prints diagonal stuffs
  *
  * @n: integer to set diagonal
+ * Return: a diagonal
  */
 void print_diagonal(int n)
 {
