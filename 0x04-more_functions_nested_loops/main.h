@@ -4,6 +4,6 @@
  * this is a header file
  *
  */
-int _isupper(int)
+int _isupper(int c);
 
 #endif /* MAIN */
