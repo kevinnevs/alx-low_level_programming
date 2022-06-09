@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * mul - mulitplier
  * @a: int to mult
