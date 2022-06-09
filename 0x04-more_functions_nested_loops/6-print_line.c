@@ -3,14 +3,22 @@
  * print_line - prints a line
  *
  * @n: integer to print stuff?
+ * Return: a straight line
  */
 void print_line(int n)
 {
-	int i;
+	int co;
 
-	for (i = 0; i < n; i++)
+	if (n <= 0)
 	{
-		_puchar('_');
+		_putchar('\n');
 	}
-	_putchar('\n');
+	else
+	{
+		for (co = 1; co <= n; co++)
+		{
+			_putchar('_');
+		}
+		_putchar('\n');
+	}
 }
