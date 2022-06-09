@@ -6,7 +6,7 @@
  * 3 multipes print Fizz instead of the number
  * 5 multiples print Buzz instead of the number
  * 3 & 5 multiples print FizzBuzz instead of the number
- * return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
