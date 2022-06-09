@@ -12,7 +12,8 @@ void print_diagonal(int n)
 	if (n <= 0)
 	{
 		_puthar('\n');
-	}else
+	} 
+	else
 	{
 		for (i = 0; i < n; i++)
 		{
