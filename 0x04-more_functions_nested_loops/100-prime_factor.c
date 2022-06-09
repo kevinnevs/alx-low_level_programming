@@ -4,7 +4,7 @@
  *
  * Return: returns 0
  */
-int main void(void)
+int main(void)
 {
 	unsigned int a = 2;
 	unsigned long n = 612852475143;
