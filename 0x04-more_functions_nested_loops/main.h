@@ -19,5 +19,10 @@ int _isdigit(int c);
  * Return: result of multpilication
  */
 int mul(int a, int b);
+/**
+ * print_numbers - print the numbers
+ *
+ */
+void print_numbers(void);
 
 #endif
