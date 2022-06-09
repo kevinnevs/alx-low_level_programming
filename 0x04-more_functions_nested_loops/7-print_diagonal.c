@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print-diagonal - prints diagonal stuffs
+ * print_diagonal - prints diagonal stuffs
  *
  * @n: integer to set diagonal
  * Return: a diagonal
