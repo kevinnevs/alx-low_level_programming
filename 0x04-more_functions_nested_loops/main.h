@@ -46,5 +46,11 @@ void print_line(int n);
  * @n: integer to set diagonal
  */
 void print_diagonal(int n);
+/**
+ * print_square - prints square
+ *
+ * @size: integer to set sqaure size
+ */
+void print_square(int size);
 
 #endif
