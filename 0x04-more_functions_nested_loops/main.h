@@ -12,5 +12,12 @@ int _isupper(int c);
  * Return: 1 if c is a digit, 0 otherwise
  */
 int _isdigit(int c);
+/**
+ * mul - multiplier
+ * @: int to mult
+ * @b: int to mult
+ * Return: result of multpilication
+ */
+int mul(int a, int b);
 
 #endif
