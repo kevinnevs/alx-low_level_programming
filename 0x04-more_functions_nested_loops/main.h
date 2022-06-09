@@ -28,5 +28,11 @@ void print_numbers(void);
  * print_most_numbers - print 0 to 9, skip 2 and 4
  */
 void print_most_numbers(void);
+/**
+ * more_numbrs - a function that prints 10 time sthe numbers, from 0 to 14
+ * _putchar only 3 times
+ * Return: 0-14 x10 followed by new line
+ */
+void more_numbers(void)
 
 #endif
