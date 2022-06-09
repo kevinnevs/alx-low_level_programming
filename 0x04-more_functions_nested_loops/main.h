@@ -4,6 +4,7 @@
  * this is a header file
  *
  */
-int _isupper(int c);
+int _isupper (int c);
+int _isdigit(int c);
 
-#endif /* MAIN */
+#endif
