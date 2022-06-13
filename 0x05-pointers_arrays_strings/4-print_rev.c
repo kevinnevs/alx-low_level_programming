@@ -1,4 +1,4 @@
-#imclude "main.h"
+#include "main.h"
 /**
  * print_rev - a function that print s a string in reverse
  * fcounter is first count to end, n is to count back
