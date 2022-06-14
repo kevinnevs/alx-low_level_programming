@@ -4,7 +4,7 @@
  * @s: string
  * Return: string
  */
-int -strlen(char *s)
+int _strlen(char *s)
 {
 	int len = 0;
 
@@ -26,7 +26,7 @@ int idx_num_starts(char *s)
 {
 	int i;
 
-	for (i = 0; i <_strlen(s); i++)
+	for (i = 0; i < _strlen(s); i++)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
 			return (i);
@@ -40,7 +40,9 @@ int idx_num_starts(char *s)
  */
 int find_sign(char *s)
 {
-	int negatives = 0, i = 0; sign = 1;
+	int negatives = 0, 
+	i = 0; 
+	sign = 1;
 
 	while (i < (idx_num_starts(s)))
 	{
