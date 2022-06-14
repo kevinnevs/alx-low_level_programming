@@ -1,96 +1,59 @@
 #include "main.h"
 /**
- * _strlen - returns the length of a string
- * @s: string
- * Return: string
+ * _strlen - gets character string
+ *
+ * @s: character to getstring
+ * Return: returns length
  */
 int _strlen(char *s)
 {
-	int len = 0;
-
-	while (*s != '\0')
-	{
-		len++;
-		s++;
-	}
-
-	return (len);
-}
-
-/**
- * idx_num_starts - find index where a digit is first found in string
- * @s: string to search
- * Return: integer index where digit is first found
- */
-int idx_num_starts(char *s)
-{
 	int i;
 
-	for (i = 0; i < _strlen(s); i++)
-	{
-		if (s[i] >= '0' && s[i] <= '9')
-			return (i);
-	}
-	return (-1); /*return -1 if no digits found */
+	for (i = 0; s[i] != '\0'; i++)
+	{}
+	return (i);
 }
+
 /**
- * find_sign - determine if integer is negative
- * @s: integer
- * Return: integer 1 or -1
- */
-int find_sign(char *s)
-{
-	int negatives = 0, i = 0; sign = 1;
-
-	while (i < (idx_num_starts(s)))
-	{
-		if (s[i++] == '-')
-			negatives++;
-	}
-
-	if (negatives % 2 != 0)
-		sign = -1;
-
-	return (sign);
-}
-/**
- * _atoi - convert string to int
+ * _atoi - converts string to integer
  * @s: string to convert
- * Return: integer
+ *
+ * Return: returns integer value
  */
 int _atoi(char *s)
 {
-	int idx_digit_starts = (idx_num_starts(s));
-	int sign;
-	int digits_to_print = 0;
-	int t = 1, i;
-	unsigned int num = 0;
-	int digit = (idx_num_starts(s));
+	int i;
+	int np = 0;
+	int c;
+	int d = 1;
+	int num = 0;
 
-	if (idx_digit_starts < 0) /* if no digits found, exit program */
-		return (0);
-
-	sign = find_sign(s);
-
-	while ((s[idx_digit_starts] >= '0' && s[idx_digit_starts] <= '9')
-			&& (idx_digit_starts <= _strlen(s))) /* count digits to print */
+	for (i = 0; i < _strlen(s); i++)
 	{
-		digits_to_print += 1;
-		idx_digit_starts++;
+		if (!(s[i] >= '0' && s[i] <= '9') && c > 0)
+			break;
+		if (s[i] == '-')
+			np--;
+		if (s[i] == '+')
+			np++;
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			c++;
+		}
 	}
-
-	i = 1;
-	while (i < digits_to_print) /* find powers of ten to muliplty places */
+	while (c > 0)
 	{
-		t *= 10;
-		i++;
+		num += ((s[i - 1] - '0') * d);
+		i--;
+		c--;
+		d *= 10;
 	}
-
-	for (i = digit; i < (digit + digits_to_print); i++) /* calculate num */
+	if (np >= 0)
 	{
-		num += (s[i] - '0') * t;
-		t /= 10;
+		num *= 1;
+	} else
+	{
+		num *= -1;
 	}
-
-	return (num * sign);
+	return (num);
 }
