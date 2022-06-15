@@ -7,7 +7,7 @@
  * @n: amount of times to append 
  * Return: returing a pointer to the resulting string (dest)
  */
-char *_strcat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
 	int i;
 	int j;
