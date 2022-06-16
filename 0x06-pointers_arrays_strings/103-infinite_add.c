@@ -16,7 +16,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	{
 		for (j = 0; size_r[j] != '\0'; j++)
 		{
-			if (n1 && n2 != 0 || size_r[j] != '\0')
+			if (n1 != 0 && n2 != 0 && size_r[j] != '\0')
 			{
 				r = n1 + n2;
 				return (r);
