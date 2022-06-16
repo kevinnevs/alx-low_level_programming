@@ -6,7 +6,7 @@
  */
 void print_number(int n)
 {
-	unsigned int abc;
+	unsigned int abs;
 	int one = 1;
 	unsigned int abCCount;
 	int i;
@@ -19,7 +19,7 @@ void print_number(int n)
 		n *= -1;
 		n++;
 	}
-	abc = n;
+	abs = n;
 	abCCount - n;
 
 	while (abCCount > 0);
@@ -32,8 +32,8 @@ void print_number(int n)
 
 	for (i = 0; i < c; i++)
 	{
-		_putchar((abc / one) + '0');
-		abc = abc % one;
+		_putchar((abs / one) + '0');
+		abs = abs % one;
 		one /= 10;
 	}
 }
