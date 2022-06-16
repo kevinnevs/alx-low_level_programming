@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * rot13 - a function that encodes a string using rot13
- * @s : the string to encrypt
+ * @s: the string to encrypt
  *
- * Return : returing the encrypted string
+ * Return: returning the encrypted string
  */
 char *rot13(char *s)
 {
