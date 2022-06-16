@@ -8,7 +8,7 @@ void print_number(int n)
 {
 	unsigned int abs;
 	int one = 1;
-	unsigned int abCCount;
+	unsigned int abSCount;
 	int i;
 	int c = 0;
 
@@ -20,11 +20,11 @@ void print_number(int n)
 		n++;
 	}
 	abs = n;
-	abCCount - n;
+	abSCount = n;
 
-	while (abCCount > 0);
+	while (abSCount > 0)
 	{
-		abCCount /= 10;
+		abSCount /= 10;
 		c++;
 	}
 	for (i = 0; i < c - 1; i++)
