@@ -7,11 +7,11 @@
  */
 char *rot13(char *s)
 {
-	int i;
-	int j;
-
 	char A[52] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
-	char B[52] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
+	char A[52] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
+
+	int i;
+	int j = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
