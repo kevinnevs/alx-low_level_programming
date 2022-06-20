@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _memcpy - copies from source to dest values in array
- * @des: destination to copy to
+ * @dest: destination to copy to
  * @src: source to copy from
  * @n: the n amount of times
  * Return: returns the string value(s)
