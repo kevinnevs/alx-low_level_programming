@@ -34,7 +34,7 @@ int lengthc(char *s)
  * @end: end of string from is_palindrome, from lengthc
  * Return: if str is a palindrome
  */
-int palindrome(char sr[], int st, int end)
+int palindrome(char str[], int st, int end)
 {
 	if (st >= end)
 		return (1);
