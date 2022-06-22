@@ -27,7 +27,7 @@ int substring_match(char *s1, char *s2, char *after_wldcd)
  * @s2: another string
  * Return: 1 if matched, 0 if not
  */
-int wildcmp(char *s1, char *s)
+int wildcmp(char *s1, char *s2)
 {
 	if (*s1 == '\0' && *s2 == '\0')
 		return (1);
