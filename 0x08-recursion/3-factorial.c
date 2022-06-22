@@ -4,7 +4,7 @@
  * @n: the number to do the factorial
  * Return: Always (0) success
  */
-int factiorial(int n)
+int factorial(int n)
 {
 	if (n < 0)
 	{
@@ -18,5 +18,5 @@ int factiorial(int n)
 	{
 		return (1);
 	}
-	return n * factorial(n - 1);
+	return (n * factorial(n - 1));
 }
