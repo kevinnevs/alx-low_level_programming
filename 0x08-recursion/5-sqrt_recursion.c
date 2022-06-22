@@ -5,7 +5,7 @@
  * @n: integer to get root of
  * Return: value of root
  */
-int checker (int i, int n)
+int checker(int i, int n)
 {
 	int j;
 
@@ -31,6 +31,6 @@ int _sqrt_recursion(int n)
 
 	if (checker(i, n) == n && n != 1)
 		return (-1);
-	return (checker (i, n));
+	return (checker(i, n));
 }
 
