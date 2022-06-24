@@ -7,7 +7,7 @@
  * @argv: argument vector
  * Return: Always (0) Success
  */
-int main(int argc, __attribute__((unused)), char *argv[])
+int main(int argc, char *argv[])
 {
 	int i, sum = 0;
 
