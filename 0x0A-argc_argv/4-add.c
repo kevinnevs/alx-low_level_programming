@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 #include <ctype.h>
+#define UNUSED(x) (void)(x)
 /**
  * StringCheck - checks string
  * @s: string to check
@@ -26,7 +27,7 @@ int StringCheck(char *s)
  * @argv: vector of arguments
  *Return: always 0
  */
-int main(int argc, __attribute__((unsused)), char  *argv[])
+int main(int argc, char  *argv[])
 {
 	int i;
 	int result = 0;
