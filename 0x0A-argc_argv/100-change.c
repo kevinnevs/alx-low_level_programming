@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		}
 		int money;
 
-		money = atoi(argc[argc - 1]);
+		money = atoi(argv[argc - 1]);
 
 		while (money > 0)
 		{
