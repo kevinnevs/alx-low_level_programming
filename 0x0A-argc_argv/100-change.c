@@ -1,14 +1,14 @@
-#include "main.h"
+#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 /**
- * main - the main function
- * @argc: argument count
- * @argv: argument vector
- * Return: Always (0) Success
+ * main - main function
+ * @argc: argumentc
+ * @argv: vector of arguments
+ *Return: always 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char  *argv[])
 {
 	int coins = 0;
 
