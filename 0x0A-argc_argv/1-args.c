@@ -1,15 +1,18 @@
 #include "main.h"
 #include <stdio.h>
-#define UNUSED(x) (void)(x)
 /**
  * main - the main function
  * @argc: argument count
  * @argv: argument vector
  * Return: Always (0) Success
  */
-int main(int argc, char *argv[])
+int main(int argc, __attribute__((unused)) char *argv[])
 {
-	UNUSED(argc);
-	printf("%d\n", argc -1);
+	int i;
+	
+	for (i = 0; i < argc; i++)
+	{
+	}
+	printf("%d\n", i -1);
 	return (0);
 }
