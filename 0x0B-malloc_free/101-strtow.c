@@ -40,7 +40,7 @@ char **checker(int word, int len, char *str, char **s)
  * @str: string to check
  * Return: returns char value
  */
-char **strtwo(char *str)
+char **strtow(char *str)
 {
 	int len, i, j, size, k, word;
 	char **s;
