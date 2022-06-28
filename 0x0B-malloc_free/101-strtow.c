@@ -73,13 +73,13 @@ char **strtwo(char *str)
 		}
 		printf("%d\n", size);
 		s[i] = (char *)malloc(sizeof(char) * size + 1);
-		if (s[i] = NULL)
+		if (s[i] == NULL)
 		{
 			for (k = i - 1; k >=  0; k--)
 				free(s[k]);
 			free(s);
 		}
 	}
-	s= checker(word, len, str, s);
+	s = checker(word, len, str, s);
 	return (s);
 }
