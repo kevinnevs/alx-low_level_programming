@@ -7,7 +7,7 @@
  * @ptr: pointer to mem prev alloc, must free end
  * @old_size: input old
  * @new_size: new input
- * Return Always (0) Success
+ * Return: Always (0) Success
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
