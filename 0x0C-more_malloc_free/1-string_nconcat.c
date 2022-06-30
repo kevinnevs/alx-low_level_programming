@@ -1,20 +1,6 @@
+#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
-#include "holberton.h"
-
-/**
- * _strlen - calculate and return string length
- * @string: string
- * Return: string length
- */
-
-int _strlen(char *string)
-{
-	int i;
-
-	for (i = 0; string[i] != '\0'; i++)
-		;
-	return (i);
-}
 /**
  * string_nconcat - a func that concats strings
  * @s1: the first string
@@ -24,31 +10,39 @@ int _strlen(char *string)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *ptr;
-	int num, len, i, j;
+	char *arr;
+	unsigned int i, j, co, co_2;
 
-	num = n;
-
-	if (s1 == NULL) /* account for NULL strings */
+	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	if (num < 0) /* account for negative n bytes */
+
+	for (i = 0; s1[i] != '\0'; i++)
+	{
+	}
+
+	for (j = 0; s2[j] != '\0'; j++)
+	{
+	}
+
+	if (n < j)
+		j = n;
+
+	j += i;
+	arr = malloc(sizeof(char *) * (j + 1));
+
+	if (arr == NULL)
 		return (NULL);
-	if (num >= _strlen(s2)) /* account for n too big */
-		num = _strlen(s2);
 
-	len = _strlen(s1) + num + 1; /* +1 to account for null pointer */
-
-	ptr = malloc(sizeof(*ptr) * len); /* malloc and check for error */
-	if (ptr == NULL)
-		return (NULL);
-
-	for (i = 0; s1[i] != '\0'; i++) /* concat */
-		ptr[i] = s1[i];
-	for (j = 0; j < num; j++)
-		ptr[i + j] = s2[j];
-	ptr[i + j] = '\0';
-
-	return (ptr);
+	for (co = 0; co < i; co++)
+		arr[co] = s1[co];
+	for (co_2 = 0; co < j; co_2++)
+	{
+		arr[co] = s2[co_2];
+		co++;
+	}
+	co++;
+	arr[co] = '\0';
+	return (arr);
 }
