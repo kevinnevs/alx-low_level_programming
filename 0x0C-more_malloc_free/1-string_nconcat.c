@@ -10,7 +10,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, nel1, nel2;
+	unsigned int i, len1, len2;
 	char *t;
 
 	if (s2 == NULL)
@@ -20,25 +20,25 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	nel1 = 0;
 	nel2 = 0;
-	while (s2[nel2] != '\0')
+	while (s2[len2] != '\0')
 		nel2++;
-	while (s1[nel1] != '\0')
+	while (s1[len1] != '\0')
 		nel1++;
 
-	if (n >= nel2)
+	if (n >= len2)
 		n = nel2;
 
-	s = maloc(sizeof(char) * n + nel1 + 1);
+	s = maloc(sizeof(char) * n + len1 + 1);
 	if (s == NULL)
 		return (NULL);
 
-	for (i = 0; i < nel1; i++)
+	for (i = 0; i < len1; i++)
 		s[i] = s1[i];
 
 	for (i = 0; i < n; i++)
-		s[i + nel1] = s2[i];
+		s[i + len1] = s2[i];
 
-	s[i + nel1] = '\0';
+	s[i + len1] = '\0';
 
 	return (s);
 }
