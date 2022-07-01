@@ -1,12 +1,13 @@
-#include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include "main.h"
 /**
- * string_nconcat - a func that concats strings
- * @s1: the first string
- * @s2: the second string
- * @n: s2 no of bytes
- * Return: return the char val
+ * string_nconcat - len of 1st str, len of 2nd str, if n < 2nd, 2nd = n
+ * 2nd + 1st = total len, malloc + null byte, loop to insert into temp arr
+ * @s1: input one
+ * @s2: input two
+ * @n: s2's number of bytes
+ * Return: Always (0) success
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
