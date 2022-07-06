@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "3-calc.h"
 /**
- * get_op_func - select correct func to perform
+ * get_op_func - gets the right func
  * @s: operand passed as argument
  * @int: int data type
  * Return: operation requested by user
