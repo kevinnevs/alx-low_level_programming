@@ -41,7 +41,7 @@ int op_div(int a, int b)
 {
 	return (a / b);
 }
-/** 
+/**
  * op_mod - a funct that returns modulus of a & b
  * @a: first int
  * @b: second int
