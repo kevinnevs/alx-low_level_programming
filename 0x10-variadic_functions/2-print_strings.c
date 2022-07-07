@@ -4,7 +4,7 @@
 #include "variadic_functions.h"
 /**
  * print_strings - a function that prints strings
- * @separator - string to be printed btwn string
+ * @separator: string to be printed btwn string
  * @n: no of strings passed to the func
  */
 void print_strings(const char *separator, const unsigned int n, ...)
