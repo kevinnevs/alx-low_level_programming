@@ -19,7 +19,7 @@ int print_c(va_list a)
  */
 int print_i(va_list a)
 {
-	printf("%c", va_arg(a, int));
+	printf("%d", va_arg(a, int));
 	return (0);
 }
 /**
