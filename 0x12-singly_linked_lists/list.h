@@ -6,7 +6,7 @@ int _putchar(char c);
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
  * @len: length of the string
- * @nest: points to the next node
+ * @next: points to the next node
  *
  * Description: singl linked list node structure
  */
