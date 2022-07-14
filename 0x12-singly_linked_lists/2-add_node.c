@@ -5,7 +5,7 @@
  * @str: string
  * Return: Always (0) Success
  */
-list_t *add_node(list_t **head, const char *str);
+list_t *add_node(list_t **head, const char *str)
 {
 	int i, count = 0;
 	list_t *new;
