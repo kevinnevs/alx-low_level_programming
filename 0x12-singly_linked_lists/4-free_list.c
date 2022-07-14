@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * free_list - a function that frees list_t list
  * @head: input
@@ -8,7 +10,7 @@ void free_list(list_t *head)
 {
 	if (head == NULL)
 		return;
-	
+
 	if (head->next != NULL)
 		free_list(head->next);
 	free_list(head->str);
