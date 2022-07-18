@@ -1,19 +1,21 @@
-#include "list.h"
-
+#include "lists.h"
 /**
  * print_listint - Entry Point
- * @h: struct listint_t type
- * Return: size_t value
+ * @h: head
+ * Return: 0
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t count = 0;
+	int count = 0;
+
+	if (h == NULL)
+		return (0);
 
 	while (h != NULL)
 	{
 		printf("%d\n", h->n);
-		count++;
 		h = h->next;
+		count++;
 	}
 
 	return (count);
