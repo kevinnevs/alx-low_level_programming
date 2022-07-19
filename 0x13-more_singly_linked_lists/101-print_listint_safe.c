@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * count_nodes_till_loop - count nodes to know now many unique nodes to print
+ * print_listint_safe - print a list
  * nodes to print
  * @head: head
  * Return: no of unique nodes in list before a loop
