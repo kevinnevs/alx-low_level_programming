@@ -2,7 +2,6 @@
 /**
  * sum_listint - a func that adds node data
  * @head: head
- * 
  * Return: Always (0) Success
  */
 int sum_listint(listint_t *head)
@@ -13,7 +12,6 @@ int sum_listint(listint_t *head)
 	{
 		return (NULL);
 	}
-	
 	while (head != NULL)
 	{
 		total += head->n;
