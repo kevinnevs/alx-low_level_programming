@@ -21,18 +21,19 @@ int count_nodes_till_loop(const listint_t *head)
 
 		if (turtle == hare)
 		{
-			turtle = headl
-				while (turtle != hare)
-				{
-					turtle = turtle->next;
-					hare = hare->next;
-					count++;
-				}
-				return (count);
+			turtle = head;
+			while (turtle != hare)
+			{
+				turtle = turtle->next;
+				hare = hare->next;
+				count++;
+			}
+			return (count);
 		}
 	}
 	return (0);
 }
+
 
 /**
  * loop - find if there's a loop in list
@@ -66,7 +67,7 @@ size_t print_listint_safe(const listint_t *head)
 	int count = 0;
 	int loop_found;
 	size_t num_nodes = 0;
-	const _listint_t *tmp;
+	const listint_t *tmp;
 
 	if (head == NULL)
 		exit(98);
@@ -88,7 +89,7 @@ size_t print_listint_safe(const listint_t *head)
 		tmp = head;
 		while (tmp != NULL)
 		{
-			printf("[%p] %d\n" (void *)tmp, tmp->n);
+			printf("[%p] %d\n", (void *)tmp, tmp->n);
 			num_nodes += 1;
 			tmp = tmp->next;
 		}
