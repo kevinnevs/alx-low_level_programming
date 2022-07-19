@@ -67,7 +67,7 @@ size_t print_listint_safe(const listint_t *head)
 	size_t num_nodes = 0;
 	const _listint_t *tmp;
 
-	if (head -- NULL)
+	if (head == NULL)
 		exit(98);
 
 	loop_found = loop(head);
