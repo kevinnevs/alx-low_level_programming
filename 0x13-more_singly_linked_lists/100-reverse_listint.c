@@ -2,7 +2,7 @@
 /**
  * reverse_listint - a func that reverse list
  * @head: head
- * Returns: a pointer to the fist node of reversed list
+ * Return: a pointer to the fist node of reversed list
  */
 listint_t *reverse_listint(listint_t **head);
 {
