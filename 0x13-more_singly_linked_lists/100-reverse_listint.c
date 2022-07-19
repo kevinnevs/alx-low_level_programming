@@ -4,7 +4,7 @@
  * @head: head
  * Return: a pointer to the fist node of reversed list
  */
-listint_t *reverse_listint(listint_t **head);
+listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *copy;
 	listint_t *temp;
