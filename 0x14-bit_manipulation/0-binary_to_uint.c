@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * binary_ro_uint - a func that converts binary to unsigned int
+ * binary_to_uint - a func that converts binary to unsigned int
  * @b: char to convert
  * Return: converted num, or 0 if b is NULL, not 0 or 1
  */
