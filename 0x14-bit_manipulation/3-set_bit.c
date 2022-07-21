@@ -4,7 +4,6 @@
  * set_bit - a function that sets value of bit to 1 at given index
  * @n: the int
  * 
- * 
  */
 int set_bit(unsgined long int *n, unsigned int index)
 {
