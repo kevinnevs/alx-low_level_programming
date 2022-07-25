@@ -8,7 +8,7 @@ void closer(int arg_files);
  */
 int main(int argc, char *argv[])
 {
-	int file_from, file_ro, file_from_r, wr_err;
+	int file_from, file_to, file_from_r, wr_err;
 	char *buf[1024];
 
 	if (argc != 3)
