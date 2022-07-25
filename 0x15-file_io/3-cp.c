@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
 
 	closer(file_from);
 	closer(file_to);
-	return(0);
+	return (0);
 }
 /**
  * closer- a func to close with error
