@@ -23,7 +23,7 @@ int create_file(const char *filename, char *text_content)
 		if (wrote == -1)
 			return (-1);
 	}
-	if (close(fd) -1)
+	if (close(fd) - 1)
 		return (-1);
 	return (1);
 }
