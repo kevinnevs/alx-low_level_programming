@@ -1,0 +1,26 @@
+# Usage:
+# make        # compile all binary
+# make clean  # remove ALL binaries and objects
+# make oclean # removes ALL object files
+# make fclean # remove ALL Emac, and Vim temoparary files, the executable and the object files
+
+CC = gcc                        # compiler to use
+
+SRC = main.c school.c
+OBJ=$(SRC:.c=.o)
+NAME = school
+RM=rm -f
+CFLAGS= -Wall -Werror -Wextra -pedantic
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: oclean all
