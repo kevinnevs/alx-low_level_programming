@@ -10,43 +10,22 @@
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
-	struct node *tempNode = (struct node*) malloc(sizeof(struct node));
-	
-	tempNode->n = n;
-	tempNode->left = NULL;
-	tempNode->right = NULL;
+	binary_tree_t *temp;
 
-	/** if tree is empty **/
-	if(root == NULL) {
-		root = tempNode;
+	temp = malloc(sizeof(binary_tree_t));
+	if (temp == NULL)
+		return NULL;
+
+	if (temp != NULL)
+	{
+		if (parent != NULL)
+			temp->parent = parent;
+		else
+			temp->parent = NULL;
+		temp->left = NULL;
+		temp->right = NULL;
+		temp->n = value;
 	}
-	else {
-		n = root;
-		parent = NULL;
 
-		while(1) {
-			parent = n;
-
-		/** go left of the tree **/
-		if(n < parent->n) {
-			current = current->leftChild;
-
-			/** insert to the left **/
-			if(current == NULL) {
-				parent->leftChild = tempNode;
-				return;
-			}
-		} /** go right of the tree **/
-		else {
-			current = current->rightChild;
-
-			/** insert to the right **/
-			if(current == NULL) {
-				parent->rightChild = tempNode;
-				return;
-			}
-		}
-		}
-	}
+	return (temp);
 }
-
