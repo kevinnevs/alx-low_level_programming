@@ -2,16 +2,16 @@
 
 /**
  *  binary_tree_delete - function that deletes an entire binary tree
- * @tree: a ponter to the root node of the tree to delete, if tree is NULL. Do nothing.
- *  Return: 0 if successfully
+ *  @tree: a ponter to the root node of the tree to delete
+ *  Return: 0 if successfully, if tree is NULL, do nothing
  */
 
 void binary_tree_delete(binary_tree_t *tree)
 {
-    if (tree)
-    {
-        binary_tree_delete(tree->left);
-        binary_tree_delete(tree->right);
-        free(tree);
-    }
+	if (tree)
+	{
+		binary_tree_delete(tree->left);
+		binary_tree_delete(tree->right);
+		free(tree);
+	}
 }

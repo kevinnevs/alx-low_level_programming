@@ -9,28 +9,28 @@
 
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
-    binary_tree_t *new = NULL;
+	binary_tree_t *new = NULL;
 
-    if (parent == NULL)
-            return (NULL);
+	if (parent == NULL)
+		return (NULL);
 
-    new = malloc(sizeof(binary_tree_t));
-    if (new == NULL)
-            return (NULL);
+	new = malloc(sizeof(binary_tree_t));
+	if (new == NULL)
+		return (NULL);
 
-    new = binary_tree_node(parent, value);
+	new = binary_tree_node(parent, value);
 
-    if (parent->left != NULL)
-    {
-        /** attach current left pointer to new **/
-        parent->left->parent = new;
+	if (parent->left != NULL)
+	{
+		/** attach current left pointer to new **/
+		parent->left->parent = new;
 
-        /** make new left connection **/
-        new->left = parent->left;
-    }
+		/** make new left connection **/
+		new->left = parent->left;
+	}
 
-    /** connect current left to current parent **/
-    parent->left = new;
+	/** connect current left to current parent **/
+	parent->left = new;
 
-    return (new);
+	return (new);
 }

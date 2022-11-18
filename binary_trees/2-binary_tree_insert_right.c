@@ -9,28 +9,28 @@
 
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 {
-    binary_tree_t *new = NULL;
+	binary_tree_t *new = NULL;
 
-    if (parent == NULL)
-            return (NULL);
+	if (parent == NULL)
+		return (NULL);
 
-    new = malloc(sizeof(binary_tree_t));
-    if (new == NULL)
-            return (NULL);
+	new = malloc(sizeof(binary_tree_t));
+	if (new == NULL)
+		return (NULL);
 
-    new = binary_tree_node(parent, value);
+	new = binary_tree_node(parent, value);
 
-    if (parent->right != NULL)
-    {
-        /** attach current right pointer to new**/
-        parent->right->parent = new;
+	if (parent->right != NULL)
+	{
+		/** attach current right pointer to new**/
+		parent->right->parent = new;
 
-        /** make new right connection**/
-        new->right = parent->right;
-    }
+		/** make new right connection**/
+		new->right = parent->right;
+	}
 
-    /** connect current right to current parent **/
-    parent->right = new;
+	/** connect current right to current parent **/
+	parent->right = new;
 
-    return (new);
+	return (new);
 }
